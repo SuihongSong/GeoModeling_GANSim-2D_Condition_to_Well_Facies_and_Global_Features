@@ -52,10 +52,15 @@ All material, including our training dataset, is made available under MIT licens
 We trained four GANs, conditioned to global features (i.e., channel sinuosity, channel width, non-channel mud proportion) only, well facies data only, both channel sinuosity and well facies data, and both mud proportion and well facies data, respectively. In [Code](./Code/), there are two subfolders: [0_only_conditioning_to_global_features](./Code/0_only_conditioning_to_global_features/) and [1_conditioning_to_well_facies_alone_or_with_global_features](./Code/1_conditioning_to_well_facies_alone_or_with_global_features/); the former is used for only conditioning to global features, and the latter is used for conditioning to well facies data alone or together with global features. All GANs are trained with progressive training method illustrated in our previous paper (see Github repository https://github.com/SuihongSong/GeoModeling_Unconditional_ProGAN).
 
 The pre-trained GANs (including generators) are evaluated in `Analyses_of_Trained_Generator-xxxx.ipynb` (refered to as `*.ipynb` in following) files using Test dataset (Zenodo, https://zenodo.org/record/3993791#.X1FQuMhKhaR) regarding the evaluation metrics in paper. Corresponding to the four pre-trained GANs, there are four \*.ipynb files: 
+
 (1) only conditioning to global features [Analyses_of_Trained_Generator.ipynb](./Code/0_only_conditioning_to_global_features/Analyses_of_Trained_Generator.ipynb); 
+
 (2) only conditioning to well facies data [Analyses_of_Trained_Generator-WellCond-AfterEnlarg.ipynb](./Code/1_conditioning_to_well_facies_alone_or_with_global_features/Analyses_of_Trained_Generator-WellCond-AfterEnlarg.ipynb); 
+
 (3) conditioning to channel sinuosity and well facies data [Analyses_of_Trained_Generator-Sinuosity-WellEnlarg.ipynb](./Code/1_conditioning_to_well_facies_alone_or_with_global_features/Analyses_of_Trained_Generator-Sinuosity-WellEnlarg.ipynb);
+
 (4) conditioning to mud proportion and well facies data [Analyses_of_Trained_Generator-MudProp-WellEnlarg.ipynb](./Code/1_conditioning_to_well_facies_alone_or_with_global_features/Analyses_of_Trained_Generator-MudProp-WellEnlarg.ipynb).
+
 
 Before running  \*.ipynb files, please download related code files, corresponding pre-trained networks, and Test dataset, and modify corresponding paths in \*.ipynb files. Readers are welcome to play with other randomly defined input conditioning data in \*.ipynb files. 
 
