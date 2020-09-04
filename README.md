@@ -86,7 +86,7 @@ probimg_test, wellfacies_test = test_set.get_minibatch_probandwell_np(3000*8)
 ```
 !git clone https://github.com/SuihongSong/GeoModeling_Conditional_ProGAN.git
 ```
-(2) download test dataset from my google drive (https://zenodo.org/record/3993791#.X1FQuMhKhaR) as \*.zip file, by running in Colab:
+(2) download test dataset from my google drive (https://drive.google.com/drive/folders/1A8oGyni8YBnJ4to2Uu7a03oMfewjbgIx) as \*.zip file, by running in Colab:
 ```
 !gdown --id 1PYOduluZ3M7JcN5acSO3rnwJ9VFZc0SE  #1PYO… is the id for the file
 ```
