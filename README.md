@@ -88,7 +88,7 @@ probimg_test, wellfacies_test = test_set.get_minibatch_probandwell_np(3000*8)
 ```
 (2) download test dataset from my google drive (https://drive.google.com/drive/folders/1A8oGyni8YBnJ4to2Uu7a03oMfewjbgIx) as \*.zip file, by running in Colab:
 ```
-!gdown --id 1PYOduluZ3M7JcN5acSO3rnwJ9VFZc0SE  #1PYO… is the id for the file
+!gdown --id 1PYOduluZ3M7JcN5acSO3rnwJ9VFZc0SE  #1PYO… is the Google Drive id for the file
 ```
 then unzip the downloaded `TestData.zip`, by running in Colab:
 ```
