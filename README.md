@@ -82,11 +82,16 @@ probimg_test, wellfacies_test = test_set.get_minibatch_probandwell_np(3000*8)
 
 `*.ipynb` files can also be run on Colab: 
 
-(1) download all related codes into Colab by running in Colab:
+
+(1) open `*.ipynb` files in Colab by using Github link: `File` -> `Open notebook` -> `Github` -> enter the corresponding `*.ipynb` Github link. 
+
+(2) in Colab, check tensorflow version by running `%tensorflow_version`, and run `%tensorflow_version 1.x` if the tensorflow has default version of 2.x; also, make sure `GPU` is used in Colab by `Change runtime type` (`Runtime` -> `Change runtime type`).
+
+(3) download all related codes into Colab by running in Colab:
 ```
 !git clone https://github.com/SuihongSong/GeoModeling_Conditional_ProGAN.git
 ```
-(2) download test dataset from my google drive (https://drive.google.com/drive/folders/1A8oGyni8YBnJ4to2Uu7a03oMfewjbgIx) as \*.zip file, by running in Colab:
+(4) download test dataset from my google drive (https://drive.google.com/drive/folders/1A8oGyni8YBnJ4to2Uu7a03oMfewjbgIx) as \*.zip file, by running in Colab:
 ```
 !gdown --id 1PYOduluZ3M7JcN5acSO3rnwJ9VFZc0SE  #1PYO… is the Google Drive id for the file
 ```
@@ -94,13 +99,12 @@ then unzip the downloaded `TestData.zip`, by running in Colab:
 ```
 !unzip /content/TestData.zip
 ```
-(3) download corresponding pre-trained GAN networks, by running in Colab:
+(5) download corresponding pre-trained GAN networks, by running in Colab:
 ```
 !gdown --id 1h61drFXGR-WZOpEJ192xHOx9ANLpwRUL  #here 1h61d… refers Google Drive ID for pre-trained GAN network only conditioning to global features as an example; obtain Google Drive ID for other pre-trained GAN networks and replace it.
 ```
-(4) in Colab, check tensorflow version by running `%tensorflow_version`, and run `%tensorflow_version 1.x` if the tensorflow has default version of 2.x; also, make sure `GPU` is used in Colab by `Change runtime type` (`Runtime` -> `Change runtime type`).
 
-(5) open `*.ipynb` files in Colab by using Github link: `File` -> `Open notebook` -> `Github` -> enter the corresponding `*.ipynb` Github link. Then play with the pre-trained generators. 
+(6) run following codes in `*.ipynb` files, and play with the pre-trained generators. 
 
 
 The pre-trained GAN networks are stored as standard pickle files:
