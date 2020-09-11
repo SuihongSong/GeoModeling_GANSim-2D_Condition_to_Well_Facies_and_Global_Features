@@ -134,7 +134,7 @@ The input of generator contains latent vectors of 128 dimensions, global feature
 
 ## Training dataset
 
-The training dataset (Zenodo, https://zenodo.org/record/3993791#.X1FQuMhKhaR) includes synthesized facies models, corresponding global features, and sparsely distributed well facies data. Training facies models are stored as multi-resolution TFRecords. Each original facies model (64x64) is downsampled into multiple resolutions (32x32, …, 4x4) and stored in `1r*.tfrecords` files for efficient streaming during training. There is a separate `1r*.tfrecords` file for each resolution. Training global features are stored as `*.labels`, and training well facies data is stored as `*3wellfacies.tfrecords`. 
+The training dataset (Zenodo, https://zenodo.org/record/3993791#.X1FQuMhKhaR) includes synthesized facies models, corresponding global features, and sparsely distributed well facies data. Training facies models are stored as multi-resolution TFRecords. Each original facies model (64x64) is downsampled into multiple resolutions (32x32, …, 4x4) and stored in `1r*.tfrecords` files for efficient streaming during training. There is a separate `1r*.tfrecords` file for each resolution. Training global features are stored as `*.labels`, training probability maps are stored in `2probimages.tfrecordsand` although they are not used as conditioning data, and training well facies data is stored as `*3wellfacies.tfrecords`. 
 
 
 ### How to make training data as TFRecords?
@@ -176,7 +176,7 @@ Other software, like SGeMS, can also be used to simulate the training facies mod
 
 Global features (also called labels) are arranged into `(FaciesModelNumber, GlobalFeaturesNumber)`.
 
-(3) The facies models are then used to simulate probability maps in `3 Generate probability maps` of [Preparing_training_and_test_datasets.ipynb](./Code/Preparing_training_and_test_datasets.ipynb). The probability maps are then used to produce well facies data in `4 Generate well facies` of [Preparing_training_and_test_datasets.ipynb](./Code/Preparing_training_and_test_datasets.ipynb).
+(3) The facies models are then used to simulate probability maps in `3 Generate probability maps` of [Preparing_training_and_test_datasets.ipynb](./Code/Preparing_training_and_test_datasets.ipynb). The probability maps are then used to produce well facies data in `4 Generate well facies` of [Preparing_training_and_test_datasets.ipynb](./Code/Preparing_training_and_test_datasets.ipynb). Although probability maps are not used in this case, they should be contained in a TFrecord training data `2probimages.tfrecords`, because `dataset.py` will need to take `2probimages.tfrecords` as inputs.
 
 (4) When downsampling training facies models, two methods were proposed currently: averaging facies codes, or remaining the most frequent facies code. In this paper, here we use the averaging facies codes. In the near future, we will propose to use a third downsampling method: averaging indicator of each facies. 
 
