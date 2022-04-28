@@ -16,7 +16,7 @@ This repository contains the official TensorFlow implementation of the following
 > Suihong Song (CUPB & Stanford), Tapan Mukerji (Stanford), and Jiagen Hou (CUPB)<br>
 > CUPB: China University of Petroleum - Beijing
 
-> https://eartharxiv.org/fm24b/
+> https://link.springer.com/article/10.1007/s11004-021-09934-0
 >
 > **Abstract:** Conditional facies modeling combines geological spatial patterns with different types of observed data, to build earth models for predictions of subsurface resources. Recently, researchers have used generative adversarial networks (GANs) for conditional facies modeling, where an unconditional GAN is first trained to learn the geological patterns using the original GANs loss function, then appropriate latent vectors are searched to generate facies models that are consistent with the observed conditioning data. A problem with this approach is that the time-consuming search process needs to be conducted for every new conditioning data. As an alternative, we improve GANs for conditional facies simulation (GANSim) by introducing an extra condition-based loss function and adjusting the architecture of the generator to take the conditioning data as inputs, based on progressive growing of GANs. The condition-based loss function is defined as the inconsistency between the input conditioning value and the corresponding characteristics exhibited by the output facies model, and forces the generator to learn the ability of being consistent with the input conditioning data, together with the learning of geological patterns. Our input conditioning factors include global features (e.g. the mud facies proportion) alone, local features such as sparse well facies data alone, and joint combination of global features and well facies data. After training, we evaluate both the quality of generated facies models and the conditioning ability of the generators, by manual inspection and quantitative assessment. The trained generators are quite robust in generating high-quality facies models conditioned to various types of input conditioning information.
 
@@ -30,7 +30,7 @@ For any question, please contact [songsuihong@126.com]<br>
 
 Material related to our paper is available via the following links:
 
-- Paper: https://eartharxiv.org/fm24b/ or (my research gate) https://www.researchgate.net/profile/Suihong_Song.
+- Paper: https://link.springer.com/article/10.1007/s11004-021-09934-0 or (my research gate) https://www.researchgate.net/profile/Suihong_Song.
 - Code: (Github) https://github.com/SuihongSong/GeoModeling_Conditional_ProGAN 
 - Training and test datasets: (Zenodo) https://zenodo.org/record/3993791#.X1FQuMhKhaR
 - Pre-trained GANs: (Zenodo) https://zenodo.org/record/3993791#.X1FQuMhKhaR, or (Google Drive) https://drive.google.com/drive/folders/1A8oGyni8YBnJ4to2Uu7a03oMfewjbgIx
