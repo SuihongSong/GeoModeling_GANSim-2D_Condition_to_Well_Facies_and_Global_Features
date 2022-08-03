@@ -2,7 +2,6 @@
 ![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg?style=plastic)
 ![TensorFlow 1.12](https://img.shields.io/badge/tensorflow-1.12-green.svg?style=plastic)
 ![cuDNN 7.4.1](https://img.shields.io/badge/cudnn-7.4.1-green.svg?style=plastic)
-![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=plastic)
 
 ![Teaser image](./Generated_facies_models_Conditioned_to_mud_proportion_and_well_data.png) 
 **Picture:** *These facies models are produced by pre-trained generator conditioned to input mud proportion and well facies data.*
@@ -228,6 +227,9 @@ Each of the four pre-trained generators are evaluated using Test dataset (Zenodo
 Detailed steps are illustrated inside these `*.ipynb` files. How to run them is also explained in previous section ` Using pre-trained networks `.
 
 Please note that the exact results may vary from run to run due to the non-deterministic nature of TensorFlow.
+
+## License
+Most code files of this study are derived from the original Progressive GANs work (https://github.com/tkarras/progressive_growing_of_gans), but we have largely amended the original codes, especially networks.py, loss.py, dataset.py, and train.py. The original Progressive GANs codes are under license of Attribution-NonCommercial 4.0 International (https://creativecommons.org/licenses/by-nc/4.0/). Other materials produced by us (e.g., the trained models and the parts of codes we have added or adjusted) are under MIT license.
 
 ## Acknowledgements
 
