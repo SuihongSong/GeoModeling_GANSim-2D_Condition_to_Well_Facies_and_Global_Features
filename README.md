@@ -1,7 +1,6 @@
 ## GANSim: Conditional Facies Simulation Using an Improved Progressive Growing of GANs
 ![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg?style=plastic)
-![TensorFlow 1.12](https://img.shields.io/badge/tensorflow-1.12-green.svg?style=plastic)
-![cuDNN 7.4.1](https://img.shields.io/badge/cudnn-7.4.1-green.svg?style=plastic)
+
 
 ![Teaser image](./Generated_facies_models_Conditioned_to_mud_proportion_and_well_data.png) 
 **Picture:** *These facies models are produced by pre-trained generator conditioned to input mud proportion and well facies data.*
@@ -43,6 +42,7 @@ All material, including our training dataset, is made available under MIT licens
 * Both Linux and Windows are supported, but Linux is suggested.
 * 64-bit Python 3.6 installation. We recommend Anaconda3 with numpy 1.14.3 or newer.
 * TensorFlow 1.10.0 or newer with GPU support.
+* (NOTE: the codes can also be run with TensorFlow2.x environment after adjusting several lines of codes, see 'Codes adjustments for TensorFlow 2')
 * One or more high-end NVIDIA GPUs. 
 * NVIDIA driver 391.35 or newer, CUDA toolkit 9.0 or newer, cuDNN 7.4.1 or newer.
 
